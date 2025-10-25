@@ -1,22 +1,99 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="utf-8" />
   <title>Ryan Yi</title>
-  <link rel="stylesheet" href="style.css">
+  <meta name="description" content="© 2025 Ryan Yi, All Rights Reserved" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap"
+    rel="stylesheet"
+  />
+
+  <!-- 스타일 -->
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: "Inter", sans-serif;
+    }
+
+    html, body {
+      height: 100%;
+      background-color: #f9fafb;
+      color: #111827;
+    }
+
+    main {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      text-align: center;
+      animation: fadeIn 1s ease;
+    }
+
+    .header {
+      font-size: 3rem;
+      font-weight: 700;
+      color: #111827;
+      margin-bottom: 0.5rem;
+    }
+
+    .subheader {
+      font-size: 1.25rem;
+      font-weight: 400;
+      color: #4b5563;
+      margin-bottom: 1rem;
+    }
+
+    .links a {
+      color: #2563eb;
+      text-decoration: none;
+      transition: color 0.3s ease;
+      margin: 0 0.25rem;
+    }
+
+    .links a:hover {
+      color: #1e40af;
+    }
+
+    footer.absolute-footer {
+      position: absolute;
+      bottom: 20px;
+      font-size: 0.85rem;
+      color: #6b7280;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+  </style>
 </head>
+
 <body>
-  <div class="container">
-    <h1>Ryan Yi</h1>
-    <h2>Student & Researcher</h2>
-    <nav>
-      <a href="about.html">About</a>,
-      <a href="portfolio.html">Portfolio</a>
-    </nav>
-  </div>
-  <footer>
-    © 2025 Ryan Yi, All Rights Reserved
-  </footer>
+  <main>
+    <section class="content">
+      <h1 class="header">Ryan Yi</h1>
+      <h3 class="subheader">Student • Researcher • Developer</h3>
+      <p class="links">
+        <a href="mailto:ryanhyi2008@gmail.com">Email</a> • 
+        <a href="https://github.com/ryan-yi" target="_blank">GitHub</a> • 
+        <a href="https://www.linkedin.com/in/ryanhyi" target="_blank">LinkedIn</a>
+      </p>
+    </section>
+    <footer class="absolute-footer">
+      &copy; 2025 Ryan Yi, All Rights Reserved
+    </footer>
+  </main>
 </body>
+
 </html>
