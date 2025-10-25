@@ -1,36 +1,43 @@
 body {
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue",
+               "Segoe UI", Roboto, Arial, sans-serif;
   background-color: #fff;
   color: #000;
   margin: 0;
-  padding: 40px;
+  padding: 60px;
   display: flex;
   flex-direction: column;
   min-height: 100vh;
+  -webkit-font-smoothing: antialiased;
 }
 
 .container {
   flex: 1;
+  max-width: 650px;
+  margin: 0 auto;
 }
 
 h1 {
-  font-size: 2em;
+  font-size: 36px;        /* 같은 크기 */
   font-weight: 600;
-  margin-bottom: 0.3em;
+  letter-spacing: -0.02em;
+  margin-bottom: 6px;
 }
 
 h2 {
-  font-size: 1.1em;
+  font-size: 18px;
   font-weight: 400;
   color: #555;
   margin-top: 0;
-  margin-bottom: 1.5em;
+  margin-bottom: 32px;
+  letter-spacing: -0.01em;
 }
 
 nav a {
   color: #0000EE;
   text-decoration: underline;
-  margin-right: 8px;
+  margin-right: 10px;
+  font-size: 16px;
 }
 
 nav a:hover {
@@ -39,8 +46,9 @@ nav a:hover {
 
 footer {
   text-align: center;
-  font-size: 0.9em;
-  color: #555;
+  font-size: 14px;
+  color: #777;
   margin-top: auto;
-  padding-top: 40px;
+  padding-top: 60px;
+  letter-spacing: -0.01em;
 }
